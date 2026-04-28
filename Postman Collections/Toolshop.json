@@ -1438,7 +1438,7 @@
 												"id": "4a1440d5-05b8-420a-99f2-01249bf95f2b",
 												"exec": [
 													"pm.test(\"Unauthorised request\", function () {",
-													"    pm.expect(pm.response.code).to.be.oneOf(401);",
+													"    pm.response.to.have.status(401);",
 													"});"
 												],
 												"type": "text/javascript",
