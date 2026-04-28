@@ -1431,6 +1431,22 @@
 								},
 								{
 									"name": "Delete specific brand",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"id": "4a1440d5-05b8-420a-99f2-01249bf95f2b",
+												"exec": [
+													"pm.test(\"Unauthorised request\", function () {",
+													"    pm.expect(pm.response.code).to.be.oneOf(401);",
+													"});"
+												],
+												"type": "text/javascript",
+												"packages": {},
+												"requests": {}
+											}
+										}
+									],
 									"id": "2cd895a2-90cc-45a9-aedd-e2a44c60e16f",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
@@ -1460,7 +1476,6 @@
 											],
 											"variable": [
 												{
-													"id": "9ed0d9e5-8ffb-475c-8578-3cebb265f862",
 													"key": "brandId",
 													"value": "1",
 													"description": "The brandId parameter in path"
