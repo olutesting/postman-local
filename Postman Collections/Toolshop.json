@@ -160,7 +160,7 @@
 											}
 										],
 										"url": {
-											"raw": "{{baseUrl}}/brands/search?q=fle",
+											"raw": "{{baseUrl}}/brands/search?q=a",
 											"host": [
 												"{{baseUrl}}"
 											],
@@ -171,7 +171,7 @@
 											"query": [
 												{
 													"key": "q",
-													"value": "fle",
+													"value": "a",
 													"description": "A query phrase"
 												}
 											]
