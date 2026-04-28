@@ -718,7 +718,7 @@
 										],
 										"body": {
 											"mode": "raw",
-											"raw": "{\n  \"name\": \"Global Optimization Consultant\",\n  \"slug\": \"new-brand\"\n}",
+											"raw": "{\n    \"name\": \"Global Optimization Consultant\",\n    \"slug\": \"new-brand\",\n    \"id\": \"01kqanpay8w2abjphbsfezr1cw\"\n}",
 											"options": {
 												"raw": {
 													"headerFamily": "json",
