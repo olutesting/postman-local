@@ -1212,7 +1212,7 @@
 											"variable": [
 												{
 													"key": "brandId",
-													"value": "01KQAKZM6CHVGQD5CHE34CQ9BM",
+													"value": "01kqd8rjjn67py0py2dh0146pa",
 													"description": "The brandId parameter in path"
 												}
 											]
@@ -1477,7 +1477,7 @@
 											"variable": [
 												{
 													"key": "brandId",
-													"value": "1",
+													"value": "01kqd8rjjn67py0py2dh0146pa",
 													"description": "The brandId parameter in path"
 												}
 											]
