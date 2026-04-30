@@ -13168,6 +13168,22 @@
 											"console.log(\"EMAIL:\", pm.environment.get(\"email\"));",
 											"console.log(\"PASSWORD:\", pm.environment.get(\"password\"));",
 											"",
+											""
+										],
+										"type": "text/javascript",
+										"packages": {},
+										"requests": {}
+									}
+								},
+								{
+									"listen": "test",
+									"script": {
+										"id": "dd0330cc-1576-4c42-965c-f196cf208d5c",
+										"exec": [
+											"pm.test(\"Login successfully\", function () {",
+											"    pm.response.to.have.status(200);",
+											"});",
+											"",
 											"const res = pm.response.json();",
 											"",
 											"pm.environment.set(\"token\", res.access_token);"
