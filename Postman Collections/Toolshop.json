@@ -13159,6 +13159,21 @@
 					"item": [
 						{
 							"name": "Login customer",
+							"event": [
+								{
+									"listen": "prerequest",
+									"script": {
+										"id": "b1dd393c-9609-40b2-94b6-fd9b31a55f1a",
+										"exec": [
+											"console.log(\"EMAIL:\", pm.environment.get(\"email\"));",
+											"console.log(\"PASSWORD:\", pm.environment.get(\"password\"));"
+										],
+										"type": "text/javascript",
+										"packages": {},
+										"requests": {}
+									}
+								}
+							],
 							"id": "5a69789d-4c7c-47d3-9f15-e771fc41c4fc",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
