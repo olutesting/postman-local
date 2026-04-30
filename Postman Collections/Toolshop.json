@@ -1456,23 +1456,7 @@
 												"value": "application/json"
 											}
 										],
-										"url": {
-											"raw": "{{baseUrl}}/brands/:brandId",
-											"host": [
-												"{{baseUrl}}"
-											],
-											"path": [
-												"brands",
-												":brandId"
-											],
-											"variable": [
-												{
-													"key": "brandId",
-													"value": "01kqf8pqt3xsmvsgx08dxrdxac",
-													"description": "The brandId parameter in path"
-												}
-											]
-										},
+										"url": "{{baseUrl}}/brands/{{brand_id}}",
 										"description": "Admin role is required to delete a specific brand"
 									},
 									"response": [
