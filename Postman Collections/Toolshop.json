@@ -13493,6 +13493,22 @@
 										"packages": {},
 										"requests": {}
 									}
+								},
+								{
+									"listen": "prerequest",
+									"script": {
+										"id": "4deda977-d125-4571-b1c6-8c20791840c8",
+										"exec": [
+											"console.log(\"=== TOKEN DEBUG ===\");",
+											"let myToken = pm.environment.get(\"token\");",
+											"console.log(\"Token value:\", myToken);",
+											"console.log(\"Token length:\", myToken ? myToken.length : \"UNDEFINED\");",
+											"console.log(\"Token starts with 'eyJ'?\", myToken ? myToken.startsWith(\"eyJ\") : false);"
+										],
+										"type": "text/javascript",
+										"packages": {},
+										"requests": {}
+									}
 								}
 							],
 							"id": "80708a98-f474-473a-a209-0dc55ac3e8c2",
