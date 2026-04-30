@@ -13273,6 +13273,20 @@
 					"item": [
 						{
 							"name": "Request a new password",
+							"event": [
+								{
+									"listen": "prerequest",
+									"script": {
+										"id": "76de81f9-2f01-4fcd-a39c-6232c25eb425",
+										"exec": [
+											"console.log(\"EMAIL:\", pm.environment.get(\"email\"));"
+										],
+										"type": "text/javascript",
+										"packages": {},
+										"requests": {}
+									}
+								}
+							],
 							"id": "620fab28-2235-4169-99c4-0c2a636704db",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
