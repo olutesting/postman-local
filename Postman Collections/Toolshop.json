@@ -15531,11 +15531,15 @@
 			"id": "e091b47a-7cae-4665-9c8d-00828ec53019"
 		}
 	],
+	"auth": {
+		"type": "bearer",
+		"bearer": {}
+	},
 	"event": [
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "e96cddce-2623-4cf5-a646-2dd46328c627",
+				"id": "a690500c-04d4-4ea3-b658-fb18704cf2bf",
 				"type": "text/javascript",
 				"packages": {},
 				"requests": {},
@@ -15547,7 +15551,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "9be432ca-0c6f-4f67-adf1-a6149b30d51b",
+				"id": "732cc73c-02ce-49a5-a3db-f48fb17aa82b",
 				"type": "text/javascript",
 				"packages": {},
 				"requests": {},
@@ -15576,8 +15580,7 @@
 		},
 		{
 			"key": "token",
-			"value": "",
-			"type": "default"
+			"value": ""
 		}
 	]
 }
