@@ -13503,7 +13503,9 @@
 											"let myToken = pm.environment.get(\"token\");",
 											"console.log(\"Token value:\", myToken);",
 											"console.log(\"Token length:\", myToken ? myToken.length : \"UNDEFINED\");",
-											"console.log(\"Token starts with 'eyJ'?\", myToken ? myToken.startsWith(\"eyJ\") : false);"
+											"console.log(\"Token starts with 'eyJ'?\", myToken ? myToken.startsWith(\"eyJ\") : false);",
+											"",
+											"console.log(\"=== CURRENT PASSWORD IN ENVIRONMENT ===\");"
 										],
 										"type": "text/javascript",
 										"packages": {},
@@ -13529,7 +13531,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"current_password\": \"welcome01\",\n  \"new_password\": \"welcome02\",\n  \"new_password_confirmation\": \"welcome02\"\n}",
+									"raw": "{\n  \"current_password\": \"SuperSecure@123\",\n  \"new_password\": \"welcome02\",\n  \"new_password_confirmation\": \"welcome02elcome02\"\n}",
 									"options": {
 										"raw": {
 											"headerFamily": "json",
