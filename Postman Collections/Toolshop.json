@@ -13166,7 +13166,11 @@
 										"id": "b1dd393c-9609-40b2-94b6-fd9b31a55f1a",
 										"exec": [
 											"console.log(\"EMAIL:\", pm.environment.get(\"email\"));",
-											"console.log(\"PASSWORD:\", pm.environment.get(\"password\"));"
+											"console.log(\"PASSWORD:\", pm.environment.get(\"password\"));",
+											"",
+											"const res = pm.response.json();",
+											"",
+											"pm.environment.set(\"token\", res.access_token);"
 										],
 										"type": "text/javascript",
 										"packages": {},
