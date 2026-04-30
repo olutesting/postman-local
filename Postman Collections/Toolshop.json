@@ -13291,7 +13291,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"email\": \"customer@practicesoftwaretesting.com\"\n}",
+									"raw": "{\n  \"email\": \"{{email}}\"\n}",
 									"options": {
 										"raw": {
 											"headerFamily": "json",
@@ -13455,6 +13455,25 @@
 					"item": [
 						{
 							"name": "Change password",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "bbbe984c-c152-4956-a94a-72b79ce97ade",
+										"exec": [
+											"pm.test(\"Password changed successfully\", function () {",
+											"    pm.response.to.have.status(200);",
+											"});",
+											"",
+											"// Update environment password for next steps",
+											"pm.environment.set(\"password\", \"welcome02\");"
+										],
+										"type": "text/javascript",
+										"packages": {},
+										"requests": {}
+									}
+								}
+							],
 							"id": "80708a98-f474-473a-a209-0dc55ac3e8c2",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
