@@ -15440,10 +15440,53 @@
 			"id": "e091b47a-7cae-4665-9c8d-00828ec53019"
 		}
 	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "e96cddce-2623-4cf5-a646-2dd46328c627",
+				"type": "text/javascript",
+				"packages": {},
+				"requests": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "9be432ca-0c6f-4f67-adf1-a6149b30d51b",
+				"type": "text/javascript",
+				"packages": {},
+				"requests": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
 	"variable": [
 		{
 			"key": "baseUrl",
 			"value": "https://api.practicesoftwaretesting.com"
+		},
+		{
+			"key": "email",
+			"value": ""
+		},
+		{
+			"key": "password",
+			"value": ""
+		},
+		{
+			"key": "new_password",
+			"value": ""
+		},
+		{
+			"key": "token",
+			"value": "",
+			"type": "default"
 		}
 	]
 }
