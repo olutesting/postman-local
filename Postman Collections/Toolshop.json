@@ -12975,7 +12975,17 @@
 											"// Save variables for next requests",
 											"pm.environment.set(\"user_id\", res.id);",
 											"pm.environment.set(\"email\", res.email);",
-											"pm.environment.set(\"password\", \"SuperSecure@123\");"
+											"pm.environment.set(\"password\", \"SuperSecure@123\");",
+											"",
+											"pm.test(\"Email matches request\", function () {",
+											"    const res = pm.response.json();",
+											"    pm.expect(res.email).to.eql(pm.environment.get(\"email\"));",
+											"});",
+											"",
+											"pm.test(\"User ID is not empty\", function () {",
+											"    const res = pm.response.json();",
+											"    pm.expect(res.id).to.not.be.empty;",
+											"});"
 										],
 										"type": "text/javascript",
 										"packages": {},
