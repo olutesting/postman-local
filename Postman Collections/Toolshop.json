@@ -493,10 +493,11 @@
 													"",
 													"const res = pm.response.json();",
 													"",
-													"// Save values for later requests",
 													"pm.environment.set(\"brand_id\", res.id);",
 													"pm.environment.set(\"brand_name\", res.name);",
 													"pm.environment.set(\"brand_slug\", res.slug);",
+													"",
+													"console.log(pm.environment.get(\"brand_id\"));",
 													""
 												],
 												"type": "text/javascript",
