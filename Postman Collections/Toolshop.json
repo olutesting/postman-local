@@ -12954,6 +12954,35 @@
 					"item": [
 						{
 							"name": "Store new user",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "b70d1eee-a4d2-4917-a98a-de9740fd3ff8",
+										"exec": [
+											"pm.test(\"User registered successfully\", function () {",
+											"    pm.response.to.have.status(201);",
+											"});",
+											"",
+											"const res = pm.response.json();",
+											"",
+											"// Validate response structure",
+											"pm.test(\"Response has required fields\", function () {",
+											"    pm.expect(res).to.have.property(\"id\");",
+											"    pm.expect(res).to.have.property(\"email\");",
+											"});",
+											"",
+											"// Save variables for next requests",
+											"pm.environment.set(\"user_id\", res.id);",
+											"pm.environment.set(\"email\", res.email);",
+											"pm.environment.set(\"password\", \"SuperSecure@123\");"
+										],
+										"type": "text/javascript",
+										"packages": {},
+										"requests": {}
+									}
+								}
+							],
 							"id": "6249ca44-b02b-4148-82dd-a2d118f41650",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -12972,7 +13001,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"first_name\": \"John\",\n  \"last_name\": \"Doe\",\n  \"email\": \"john@doe.example\",\n  \"password\": \"SuperSecure@123\",\n  \"address\": {\n    \"street\": \"Street 1\",\n    \"city\": \"City\",\n    \"state\": \"State\",\n    \"country\": \"Country\",\n    \"postal_code\": \"1234AA\"\n  },\n  \"phone\": \"0987654321\",\n  \"dob\": \"1970-01-01\"\n}",
+									"raw": "{\n  \"first_name\": \"John\",\n  \"last_name\": \"Doe\",\n  \"email\": \"user{{$timestamp}}@test.com\",\n  \"password\": \"SuperSecure@123\",\n  \"address\": {\n    \"street\": \"Street 1\",\n    \"city\": \"City\",\n    \"state\": \"State\",\n    \"country\": \"Country\",\n    \"postal_code\": \"1234AA\"\n  },\n  \"phone\": \"0987654321\",\n  \"dob\": \"1970-01-01\"\n}",
 									"options": {
 										"raw": {
 											"headerFamily": "json",
