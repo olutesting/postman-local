@@ -159,23 +159,7 @@
 												"value": "application/json"
 											}
 										],
-										"url": {
-											"raw": "{{baseUrl}}/brands/search?id={{user_id}}",
-											"host": [
-												"{{baseUrl}}"
-											],
-											"path": [
-												"brands",
-												"search"
-											],
-											"query": [
-												{
-													"key": "id",
-													"value": "{{user_id}}",
-													"description": "A query phrase"
-												}
-											]
-										},
+										"url": "{{baseUrl}}/brands/search",
 										"description": "Search is performed on the `name` column"
 									},
 									"response": [
@@ -1188,7 +1172,7 @@
 												}
 											}
 										},
-										"url": "{{baseUrl}}/brands/{{brand_id}}",
+										"url": "{{baseUrl}}/brands/{{created_brand_id}}",
 										"description": "Update specific brand"
 									},
 									"response": [
