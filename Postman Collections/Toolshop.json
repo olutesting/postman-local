@@ -718,7 +718,7 @@
 										],
 										"body": {
 											"mode": "raw",
-											"raw": "{\n  \"name\": \"{{brand_name}}\",\n  \"slug\": \"{{brand_slug}}\"\n}",
+											"raw": "{\n  \"name\": \"{{created_brand_name}}\",\n  \"slug\": \"{{created_brand_slug}}\"\n}",
 											"options": {
 												"raw": {
 													"headerFamily": "json",
