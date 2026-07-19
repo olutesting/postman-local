@@ -337,23 +337,7 @@
 												"value": "application/json"
 											}
 										],
-										"url": {
-											"raw": "{{baseUrl}}/brands/:brandId",
-											"host": [
-												"{{baseUrl}}"
-											],
-											"path": [
-												"brands",
-												":brandId"
-											],
-											"variable": [
-												{
-													"key": "brandId",
-													"value": "01KXWX3JVHZZB8H4Q9AZQSCQA8",
-													"description": "The brandId parameter in path"
-												}
-											]
-										},
+										"url": "{{baseUrl}}/brands/{{brand_id}}",
 										"description": "Retrieve specific brand"
 									},
 									"response": [
