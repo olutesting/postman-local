@@ -498,6 +498,8 @@
 													"pm.environment.set(\"brand_slug\", res.slug);",
 													"",
 													"console.log(pm.environment.get(\"brand_id\"));",
+													"console.log(pm.environment.get(\"brand_name\"));",
+													"console.log(pm.environment.get(\"brand_slug\"));",
 													""
 												],
 												"type": "text/javascript",
