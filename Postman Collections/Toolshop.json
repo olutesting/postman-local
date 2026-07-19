@@ -477,18 +477,25 @@
 													"",
 													"const res = pm.response.json();",
 													"",
-													"pm.environment.set(\"brand_id\", res.id);",
-													"pm.environment.set(\"brand_name\", res.name);",
-													"pm.environment.set(\"brand_slug\", res.slug);",
+													"pm.environment.set(\"created_brand_id\", res.id);",
+													"pm.environment.set(\"created_brand_name\", res.name);",
+													"pm.environment.set(\"created_brand_slug\", res.slug);",
 													"",
-													"console.log(pm.environment.get(\"brand_id\"));",
-													"console.log(pm.environment.get(\"brand_name\"));",
-													"console.log(pm.environment.get(\"brand_slug\"));",
+													"console.log(pm.environment.get(\"created_brand_id\"));",
+													"console.log(pm.environment.get(\"created_brand_name\"));",
+													"console.log(pm.environment.get(\"created_brand_slug\"));",
 													""
 												],
 												"type": "text/javascript",
 												"packages": {},
 												"requests": {}
+											}
+										},
+										{
+											"listen": "prerequest",
+											"script": {
+												"packages": {},
+												"type": "text/javascript"
 											}
 										}
 									],
