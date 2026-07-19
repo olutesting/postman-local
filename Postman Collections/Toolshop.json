@@ -160,7 +160,7 @@
 											}
 										],
 										"url": {
-											"raw": "{{baseUrl}}/brands/search?q=a",
+											"raw": "{{baseUrl}}/brands/search?id={{user_id}}",
 											"host": [
 												"{{baseUrl}}"
 											],
@@ -170,8 +170,8 @@
 											],
 											"query": [
 												{
-													"key": "q",
-													"value": "a",
+													"key": "id",
+													"value": "{{user_id}}",
 													"description": "A query phrase"
 												}
 											]
