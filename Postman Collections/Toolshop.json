@@ -692,7 +692,9 @@
 												"exec": [
 													"pm.test(\"Brand exists\", function () {",
 													"    pm.response.to.have.status(409);",
-													"});"
+													"});",
+													"",
+													""
 												],
 												"type": "text/javascript",
 												"packages": {},
@@ -893,7 +895,9 @@
 												"exec": [
 													"pm.test(\"Brand partial update successful\", function () {",
 													"    pm.response.to.have.status(200);",
-													"});"
+													"});",
+													"",
+													""
 												],
 												"type": "text/javascript",
 												"packages": {},
@@ -1433,7 +1437,7 @@
 												"value": "application/json"
 											}
 										],
-										"url": "{{baseUrl}}/brands/{{brand_id}}",
+										"url": "{{baseUrl}}/brands/{{created_brand_id}}",
 										"description": "Admin role is required to delete a specific brand"
 									},
 									"response": [
