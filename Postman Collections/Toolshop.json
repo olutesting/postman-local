@@ -927,7 +927,7 @@
 												}
 											}
 										},
-										"url": "{{baseUrl}}/brands/{{brand_id}}",
+										"url": "{{baseUrl}}/brands/{{created_brand_id}}",
 										"description": "Partially update specific brand"
 									},
 									"response": [
