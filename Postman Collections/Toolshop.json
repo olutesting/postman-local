@@ -159,6 +159,15 @@
 												"value": "application/json"
 											}
 										],
+										"body": {
+											"mode": "raw",
+											"raw": "",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
 										"url": "{{baseUrl}}/brands/search",
 										"description": "Search is performed on the `name` column"
 									},
